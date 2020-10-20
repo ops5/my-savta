@@ -1,5 +1,7 @@
 {
   "name": "buttonApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

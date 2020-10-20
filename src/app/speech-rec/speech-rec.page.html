@@ -1,0 +1,39 @@
+<!-- <ion-header>
+    <ion-toolbar>
+        <ion-title>Savta App</ion-title>
+    </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+    <!-- <ion-button (click)="checkPermission()">Check Permission</ion-button>
+    <ion-button (click)="requestPermission()">Request Permission</ion-button>
+    <ion-button (click)="startListening()">Start Listening</ion-button> -->
+    <div class="start-listening-button-frame">
+        <button class="start-listening-button" (click)="startListening2()">
+            Push to Talk
+        </button>
+        <div class="saving" *ngIf="showSpinner">
+            <span class="dots-font-size">●</span
+            ><span class="dots-font-size">●</span
+            ><span class="dots-font-size">●</span>
+        </div>
+    </div>
+
+    <div class="select-language">
+        <ion-select
+            placeholder="Select Language"
+            (ionChange)="changeLanguage($event.target.value)"
+        >
+            <ion-select-option value="en-US">English</ion-select-option>
+            <ion-select-option value="he-IL">Hebrew</ion-select-option>
+            <ion-select-option value="ru-RU">Russian</ion-select-option>
+        </ion-select>
+    </div>
+
+    <div class="face-recognition">
+        <img src="../../assets/icon/happy.png" />
+        <img src="../../assets/icon/natural.png" />
+        <img src="../../assets/icon/sad.png" />
+        <img src="../../assets/icon/angry.png" />
+    </div>
+</ion-content>

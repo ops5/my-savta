@@ -1,0 +1,53 @@
+.start-listening-button {
+    background-color: #e52b2c;
+    color: white;
+    font-size: 7vw;
+    word-wrap: break-word;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    align-self: center;
+    outline: none;
+}
+
+.start-listening-button-frame {
+    display: flex;
+    justify-content: center;
+    background-color: #cfe9fa;
+    height: 60%;
+}
+
+.face-recognition {
+    display: flex;
+    justify-content: center;
+}
+
+.select-language {
+    background: linear-gradient(180deg, #cfe9fa 50%, white 50%) !important;
+}
+
+ion-select {
+    /* Applies to the value and placeholder color */
+    background-color: #57aae9;
+
+    /* Set a different placeholder color */
+    --placeholder-color: white;
+
+    /* Set full opacity on the placeholder */
+    --placeholder-opacity: 1;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+.face-recognition {
+    display: flex;
+    height: 30%;
+    img {
+        align-self: center;
+        max-width: 60px;
+        max-height: 60px;
+    }
+}
